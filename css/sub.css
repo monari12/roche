@@ -1,0 +1,100 @@
+/* sub.css */
+
+/* sub 공통스타일 */
+#sub-title #sub-header h2{
+    font-size:40px;
+    font-weight:500;
+    color:#fff;
+
+}
+#main h3{
+    font-size:34px;
+}
+#main .container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* sub1-1 기업소개 */
+#sub-title{
+    width: 100%;
+    position: relative;
+    height: 388px;
+}
+/* 배경이 각 서브페이지 별로 다름 */
+#sub-header{
+    width: 100%;
+    height: 388px;
+    background: #ccc;
+    position: absolute;
+    background-image: url(../images/sub1-1-title-bg.jpg);
+    left:50%;
+    transform: translateX(-50%);
+}
+#sub-header .container{
+    /* outline:1px solid red; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#lnb {
+    border-bottom: 1px solid var(--main-color);
+}
+#lnb ul{
+    display: flex;
+    justify-content: center;
+}
+#lnb ul a{
+    font-size:18px;
+    padding: 16px 30px;
+    display: block;
+    
+}
+/* 현재 페이지 메뉴 스타일 */
+#lnb ul > li.active > a {
+    border-bottom: 4px solid var(--main-color);
+    color:var(--main-color);
+}
+
+#sub1-1 #main article {
+    display: flex;
+    flex-wrap: wrap;
+}
+#sub1-1 #main article img{
+    width:50%;
+    height: 450px;
+}
+#sub1-1 #main article .article-group:first-of-type{
+    width:50%;
+    /* outline:1px solid red; */
+    padding-left: 60px;
+}
+#sub1-1 #main article .article-group{
+    line-height: 30px;
+}
+
+#sub1-1 #main article em{
+    color:var(--main-color);
+    font-style: normal;
+    font-weight: 500;
+}
+#sub1-1 #main article .article-group:last-child{
+    margin-top: 50px;
+}
+
+#sub1-2 #main article{
+    display: flex;
+}
+#sub1-2 #main article .article-group {
+    margin-left: 30px;
+}
+#sub1-2 #main article img{
+    width:40%;
+    height: 350px;
+}
+#sub1-2 #main article .article-group p strong{
+    margin-right: 10px;
+    color:var(--main-color);
+}
